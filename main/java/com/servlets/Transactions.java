@@ -26,6 +26,9 @@ public class Transactions extends HttpServlet {
 			int noPages=0;
 			int noOfTxns=0;
 			int page=1;
+			if(request.getParameter("cpage")!=null) {
+				page=Integer.parseInt(request.getParameter("cpage"));
+     		}
 			if(request.getParameter("page")!=null) {
 				page=Integer.parseInt(request.getParameter("page"));
 			}

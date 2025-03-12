@@ -14,6 +14,7 @@
    String email=(String)session.getAttribute("email");
    String mobile=(String)session.getAttribute("mobile");
    String gender=(String)session.getAttribute("gender");
+   String cpage=request.getParameter("cpage");
    %>
    name:<%=name %>
    password:<%=password %>
@@ -21,5 +22,6 @@
    mobile:<%=mobile %>
    gender:<%=gender %>
    <a href="Logout">logout</a>
+   <a href="Transactions?cpage=<%=cpage%>">view transactions</a>
 </body>
 </html>

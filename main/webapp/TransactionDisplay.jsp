@@ -70,5 +70,6 @@
 			}
 	%>		
 	 </div>
+	  <a href="Profile.jsp?cpage=<%=currentPage%>">go to profile page</a>
 </body>
 </html>
